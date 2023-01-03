@@ -1,0 +1,265 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Spartan', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+.top-mobile {
+    display: none;
+}
+
+.bottom-mobile {
+    display: none;
+}
+
+.top-desktop {
+    position: absolute;
+}
+
+.bottom-desktop {
+    position: absolute;
+}
+
+.main {
+    max-width: 1100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.container {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.first {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro {
+    max-width: 40%;
+    align-self: center;
+}
+
+.intro h1 {
+    color: hsl(300, 43%, 22%);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.intro p {
+    color: hsl(303, 10%, 53%);
+    font-size: 12px;
+    padding-top: 10px;
+    line-height: 17px;
+}
+
+.rating {
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.reviews, .report-guru, .best-tech {
+    background-color: hsl(300, 24%, 96%);
+    margin: 7px;
+    font-size: 10px;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    display: flex;
+    width: 70%;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.reviews p, .report-guru p, .best-tech p {
+    padding-left: 20px;
+}
+
+.reviews {
+    align-self: flex-start;
+}
+
+.best-tech {
+    align-self: flex-end;
+}
+
+.second {
+    display: flex;
+    align-items: center;
+    height: 33%;
+}
+
+.colton {
+    align-self: flex-start;
+}
+
+.anne {
+    align-self: flex-end;
+}
+
+.colton, .irene, .anne {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    margin: 15px;
+    font-size: 10px;
+    padding: 20px;
+}
+
+.colton h2, .irene h2, .anne h2 {
+    color: white;
+}
+
+.colton h3, .irene h3, .anne h3 {
+    color: hsla(333, 80%, 67%, 0.5);
+}
+
+.colton p, .irene p, .anne p {
+    color: hsla(100, 100%, 100%, 0.6);    
+    line-height: 15px;
+}
+
+.second img {
+    border-radius: 50%;
+    width: 30px;
+    margin-right: 15px;
+}
+
+.smith, .roberts, .wallace {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.colton-h2h3, .irene-h2h3, .anne-h2h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30px;
+}
+
+@media (max-width: 885px) {
+    .top-mobile {
+        display: absolute;
+    }
+    
+    .bottom-mobile {
+        display: absolute;
+    }
+    
+    .top-desktop {
+        position: none;
+    }
+    
+    .bottom-desktop {
+        position: none;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .first {
+        flex-direction: column;
+    }
+
+    .second {
+        flex-direction: column;
+    }
+
+    .intro {
+        text-align: center;
+    }
+
+    .intro p {
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+
+    .rating {
+        align-self: center;
+    }
+
+    .reviews {
+        align-self: center;
+    }
+    
+    .best-tech {
+        align-self: center;
+    }
+
+    .reviews, .report-guru, .best-tech {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reviews p, .report-guru p, .best-tech p {
+        padding-top: 10px;
+    }
+
+    .second {
+        align-self: center;
+    }
+
+    .colton, .irene, .anne {
+        max-width: 200px;
+    }
+}
